@@ -10,8 +10,8 @@ import os
 # 3. Whisper
 #   = @in: audio_file, @out: text
 class OpenAIService:
-    def __init__(self,API_KEY):
-        self.api_key = API_KEY
+    def __init__(self,OPENAI_API_KEY):
+        self.api_key = OPENAI_API_KEY
         self.openai = openai
 
     # Connect to OpenAi API using API_KEY
