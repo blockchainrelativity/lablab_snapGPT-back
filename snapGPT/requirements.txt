@@ -1,0 +1,9 @@
+flask
+openai
+cohere
+dotenv
+multiprocessing
+threading
+gc
+ast
+subprocess
