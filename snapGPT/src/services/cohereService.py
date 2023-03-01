@@ -14,7 +14,7 @@ def cohere_start(api_key, model_size, seq, arr_prompts):
 
 class CohereService:
     def __init__(self, api_key, model_size,seq, arr_prompts):
-        self.api_key = COHERE_API_KEY
+        self.api_key = api_key
         self.model_size = model_size
         self.seq = seq
         self.prompts = arr_prompts
