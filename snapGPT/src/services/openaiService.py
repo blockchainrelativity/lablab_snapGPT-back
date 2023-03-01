@@ -57,6 +57,7 @@ class OpenAIService:
             return 0
         user_prompt = " \"" + user_prompt + "\"."
         gpt_prompt = mp[command]["prompt"] + user_prompt
+        print("gpt_prompt: \n" + gpt_prompt + "\n")
         response = openai.Completion.create(
             model=mp[command]["model"],
             prompt=gpt_prompt,
@@ -66,7 +67,7 @@ class OpenAIService:
             frequency_penalty=mp[command]["frequency_penalty"],
             presence_penalty=mp[command]["presence_penalty"]
         )
-        print("\n\n__run_gpt_prompt Response:\n" + response + "\n\n")
+        # print("\n\n__run_gpt_prompt Response:\n" + response + "\n\n")
         return response
 
     # make resume look "prettier"
