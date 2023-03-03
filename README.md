@@ -28,7 +28,8 @@ import requests
 text = "I is a software developer. I has 5 years of experience in programing."
 response = requests.post("http://localhost:5000/resume/correct", json={"text": text})
 corrected_text = response.json()["corrected_text"]
-print(corrected_text)```
+print(corrected_text)
+```
 
 
 ###'/resume/embed'
@@ -41,7 +42,8 @@ import requests
 text = "I am a software developer with 5 years of experience in programming. I am proficient in Python, Java, and C++."
 response = requests.post("http://localhost:5000/resume/embed", json={"text": text})
 embedding = response.json()["embedding"]
-print(embedding)```
+print(embedding)
+```
 
 ##Contributing
 
