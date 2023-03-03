@@ -38,7 +38,7 @@ def http_snap_resume():
     # openai_process.start()
     oa = OpenAIService(OPENAI_KEY)
     oa.connect()
-    corrected_resume = oa.resume_grammar_gpt(resume_text)
+    corrected_resume = oa.resume_grammar_correct(resume_text)
     return jsonify({"resume": corrected_resume}), 200
 
 
