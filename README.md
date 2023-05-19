@@ -16,7 +16,7 @@ To install and run the backend, follow these steps:
 
 ## Usage
 
-Once the server is running, you can send a POST request to the `/resume/correct` endpoint to generate a resume body. 
+Once the server is running, you can send aasdf POST request to the `/resume/correct` endpoint to generate a resume body. 
 The backend provides two main endpoints for working with resumes:
 
 ### '/resume/correct'
